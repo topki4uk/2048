@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="_2048.block"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_2048"
+             mc:Ignorable="d" 
+             d:DesignHeight="105" d:DesignWidth="105">
+    <Grid>
+        <Rectangle x:Name="color" HorizontalAlignment="Center" Height="105" VerticalAlignment="Center" Width="105" Fill="#EEE4D8" Stroke="#EEE4D8"/>
+        <TextBox x:Name="txt" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="105" Height="105" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="72" TextAlignment="Center" IsEnabled="False" Text="2" VerticalContentAlignment="Center" FontFamily="Microsoft Sans Serif"/>
+
+    </Grid>
+</UserControl>

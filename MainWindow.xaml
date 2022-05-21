@@ -1,0 +1,44 @@
+﻿<Window x:Class="_2048.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2048"
+        mc:Ignorable="d"
+        Title="2048" Height="700" Width="550" KeyUp="Window_KeyUp">
+    <Grid Height="680" Width="550" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid x:Name="grid" Width="495" Height="495" Margin="0, 50, 0, 0" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+            <Image x:Name="field" VerticalAlignment="Top" Source="/field.png" Grid.ColumnSpan="9" Grid.RowSpan="9"/>
+        </Grid>
+
+        <Button x:Name="button_restart" Content="2048" Margin="30,20,340,580" FontSize="48" FontFamily="Goudy Stout" Click="button_restart_Click" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="txt" HorizontalAlignment="Left" Margin="347,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Height="52" TextAlignment="Right" Text="0" FontSize="36" BorderBrush="{x:Null}" FontFamily="Goudy Stout" IsHitTestVisible="False"/>
+        <Label Content="Score:" HorizontalAlignment="Left" Margin="347,10,0,0" VerticalAlignment="Top" Width="175" Height="37" FontSize="20" FontFamily="Goudy Stout"/>
+    </Grid>
+
+
+</Window>
