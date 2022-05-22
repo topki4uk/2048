@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2048"
         mc:Ignorable="d"
+        Icon = "Pictures/2048_logo.png"
         Title="2048" Height="700" Width="550" KeyUp="Window_KeyUp">
     <Grid Height="680" Width="550" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Grid x:Name="grid" Width="495" Height="495" Margin="0, 50, 0, 0" HorizontalAlignment="Center">
